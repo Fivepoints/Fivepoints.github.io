@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://github.com/Fivepoints/BlogImages/raw/master/1.png">
 <meta property="og:image" content="https://github.com/Fivepoints/BlogImages/raw/master/20180324103722.png">
-<meta property="og:updated_time" content="2018-03-24T02:50:41.056Z">
+<meta property="og:updated_time" content="2018-03-24T02:54:01.315Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scrapy-豆瓣电影评论">
 <meta name="twitter:description" content="使用Scrapy爬取豆瓣电影的短评 由于某些项目的需要，需要爬取一些数据，之前爬虫都是使用request库来爬的，这次学习一下Scrapy。">
@@ -393,7 +393,7 @@
 <p>settting.py由名字就可以看出，是我们爬取的一些设置文件。</p>
 <h2 id="爬取"><a href="#爬取" class="headerlink" title="爬取"></a>爬取</h2><h3 id="分析爬取页面"><a href="#分析爬取页面" class="headerlink" title="分析爬取页面"></a>分析爬取页面</h3><p>我们打开要爬取的页面，使用chrome浏览器右键打开检查选项，查看页面元素。</p>
 <p><img src="https://github.com/Fivepoints/BlogImages/raw/master/1.png" alt=""></p>
-<p>可以看到所有的评论都存在于一个class为”mod-bd”的&amp;<div>中，单个评论是以一个class为”comment-item”的元素存在的。</div></p>
+<p>可以看到所有的评论都存在于一个class为 “mod-bd” 的 “div” 中，单个评论是以一个class为 “comment-item” 的元素存在的。</p>
 <p><img src="https://github.com/Fivepoints/BlogImages/raw/master/20180324103722.png" alt=""></p>
 <p>里面包含了评论的有用数目，评论信息，评论者ID，评价时间，评论者名称，打分。</p>
 <h3 id="选择爬取内容"><a href="#选择爬取内容" class="headerlink" title="选择爬取内容"></a>选择爬取内容</h3><p>因此我们根据这些信息来编写items.py</p>
