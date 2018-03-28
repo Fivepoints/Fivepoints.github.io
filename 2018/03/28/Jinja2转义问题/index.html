@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Flask,Jinja2,JS," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="生猛 且坚强 !">
-<meta property="og:type" content="website">
-<meta property="og:title" content="All categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+<meta name="description" content="Jinja2模板显示数据的转义问题- 下午有一个小Bug，是后台从数据库中取出数据，前台使用Jinja2模板进行显示，发现前台显示的数据和后台是不对应的，确定了后台取出的数据是没有问题的，转而考虑是不是前台显示的问题。">
+<meta name="keywords" content="Flask,Jinja2,JS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jinja2转义问题">
+<meta property="og:url" content="http://yoursite.com/2018/03/28/Jinja2转义问题/index.html">
 <meta property="og:site_name" content="Fivepoints">
-<meta property="og:description" content="生猛 且坚强 !">
+<meta property="og:description" content="Jinja2模板显示数据的转义问题- 下午有一个小Bug，是后台从数据库中取出数据，前台使用Jinja2模板进行显示，发现前台显示的数据和后台是不对应的，确定了后台取出的数据是没有问题的，转而考虑是不是前台显示的问题。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-30T08:34:28.622Z">
+<meta property="og:updated_time" content="2018-03-28T11:41:37.257Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="All categories">
-<meta name="twitter:description" content="生猛 且坚强 !">
+<meta name="twitter:title" content="Jinja2转义问题">
+<meta name="twitter:description" content="Jinja2模板显示数据的转义问题- 下午有一个小Bug，是后台从数据库中取出数据，前台使用Jinja2模板进行显示，发现前台显示的数据和后台是不对应的，确定了后台取出的数据是没有问题的，转而考虑是不是前台显示的问题。">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/28/Jinja2转义问题/"/>
 
 
 
 
 
-  <title>All categories | Fivepoints</title>
+  <title>Jinja2转义问题 | Fivepoints</title>
   
 
 
@@ -240,40 +241,198 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/Jinja2转义问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhao Pengya">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/sns.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Fivepoints">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">All categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 3 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web框架/">web框架</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/爬虫/">爬虫</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">Jinja2转义问题</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T20:35:25+08:00">
+                2018-03-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/28/Jinja2转义问题/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/03/28/Jinja2转义问题/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="Jinja2模板显示数据的转义问题"><a href="#Jinja2模板显示数据的转义问题" class="headerlink" title="Jinja2模板显示数据的转义问题-"></a>Jinja2模板显示数据的转义问题-</h1><blockquote>
+<p>下午有一个小Bug，是后台从数据库中取出数据，前台使用Jinja2模板进行显示，发现前台显示的数据和后台是不对应的，确定了后台取出的数据是没有问题的，转而考虑是不是前台显示的问题。</p>
+<a id="more"></a>
+</blockquote>
+<p>先说下Bug情况，后台创建了一个List，通过print打印出来是这种结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">print(dateList)</span><br><span class="line">print(type(dateList))</span><br><span class="line"></span><br><span class="line">console：</span><br><span class="line">[<span class="string">'2018-03-25'</span>, <span class="string">'2018-03-26'</span>, <span class="string">'2018-03-27'</span>, <span class="string">'2018-03-28'</span>]</span><br><span class="line">&lt;<span class="class"><span class="keyword">class</span> '<span class="title">list</span>'&gt;</span></span><br></pre></td></tr></table></figure>
+<p>前台js里使用Jinja2模板显示：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> date = &#123;&#123; trendilt[<span class="string">'dateList'</span>]|safe &#125;&#125;;</span><br></pre></td></tr></table></figure>
+<p>刷新页面，发现有错，打开chrome浏览器的检查，发现以下错误：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Uncaught <span class="built_in">SyntaxError</span>: Unexpected token &amp;</span><br><span class="line"></span><br><span class="line">定位到代码部分</span><br><span class="line">&gt; var date = [&amp;#39;2018-03-25&amp;#39;, &amp;#39;2018-03-26&amp;#39;, &amp;#39;2018-03-27&amp;#39;, &amp;#39;2018-03-28&amp;#39;];</span><br></pre></td></tr></table></figure>
+<p>会发现通过Jinja2得到的List里将每个’都转义为</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&amp;#39; 而不是显示'， </span><br><span class="line">查资料发现，&amp;#39;是HTML转义字符表里面的'的实体编号。</span><br></pre></td></tr></table></figure>
+<p>对此我们使用Jinja2里的safe过滤器选项解决问题，此过滤器可以保证原始的String安全的被渲染到前段界面。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> date = &#123;&#123; trendilt[<span class="string">'dateList'</span>] | safe&#125;&#125;;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Flask/" rel="tag"># Flask</a>
+          
+            <a href="/tags/Jinja2/" rel="tag"># Jinja2</a>
+          
+            <a href="/tags/JS/" rel="tag"># JS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/22/Scrapy-豆瓣电影评论/" rel="next" title="Scrapy-豆瓣电影评论">
+                <i class="fa fa-chevron-left"></i> Scrapy-豆瓣电影评论
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -285,8 +444,8 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="categories/index.html"
-           data-title="All categories" data-url="http://yoursite.com/categories/index.html">
+      <div class="ds-thread" data-thread-key="2018/03/28/Jinja2转义问题/"
+           data-title="Jinja2转义问题" data-url="http://yoursite.com/2018/03/28/Jinja2转义问题/">
       </div>
     </div>
 
@@ -313,8 +472,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -394,6 +562,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jinja2模板显示数据的转义问题"><span class="nav-number">1.</span> <span class="nav-text">Jinja2模板显示数据的转义问题-</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
